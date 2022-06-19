@@ -11,7 +11,7 @@ on:
 
 env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' # set this to the path to your web app project, defaults to the repository root
-  DOTNET_VERSION: '6.0.x' # set this to the dotnet version to use
+  DOTNET_VERSION: 'v6.0' # set this to the dotnet version to use
 
 jobs:
   build-and-deploy:
@@ -39,4 +39,4 @@ jobs:
           app-name: 'privatefpnetresource'
           slot-name: 'Dev'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A3685691236D46899F0F1C9A7A2F26FD }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7D5EFF1C73334AB19FCB3516E1BA63E5 }}
