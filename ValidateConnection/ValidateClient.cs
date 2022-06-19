@@ -12,7 +12,7 @@ namespace ValidateConnection
     public static class ValidateClient
     {
         private static HttpClient HttpClientObj = new HttpClient();
-        [FunctionName("Function1")]
+        [FunctionName("ValidateAndFetch")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");
